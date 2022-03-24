@@ -10,6 +10,9 @@ const app = express()
 app.use(cors({
     methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
 }));
+app.use(express.static('my-store-react-fullstack/build'));
+
+app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'my-store-react-fullstack', 'build', 'index.html')));
 
 connectDB()
 
