@@ -8,11 +8,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "client-install": "npm install --prefix my-store-react",
+    "client-install": "npm install --prefix client",
     "server": "nodemon server",
-    "client": "npm start --prefix my-store-react",
+    "client": "npm start --prefix client",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm install --prefix my-store-react && npm run build --prefix my-store-react"
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
   },
   "author": "serhii_ovsianykov",
   "license": "ISC",

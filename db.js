@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 
 const connectDB = async () => {
     try {
-      const conn = await mongoose.connect(process.env.MONGO_URI );
-        console.log(`MongoDB connected ${conn.connection.host}`.cyan.underline.bold)
+      const conn = await mongoose.connect('mongodb+srv://wesbound:fender1979@cluster0.nb4fb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' );
+        console.log(`MongoDB connected ${conn.connection.host}`)
     } catch (e) {
 
-        console.log(`Error  ${e.message}`.red.bold)
+        console.log(`Error  ${e.message}`)
         process.exit(1)
     }
 }
