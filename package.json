@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "client-install": "npm install --prefix my-store-react",
     "server": "nodemon server",
     "client": "npm start --prefix my-store-react",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm install --prefix my-store-react && npm run build --prefix my-store-react"
   },
   "author": "serhii_ovsianykov",
   "license": "ISC",
