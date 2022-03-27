@@ -1,0 +1,36 @@
+.btn {
+  display: inline-flex;
+  height: 30px;
+  padding: 0 10px;
+  align-items: center;
+  background: #07325d;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  border-radius: 3px;
+  box-shadow: 0 0 1px #c5c5c5;
+  font-size: 14px;
+  transition: 0.15s ease-in-out;
+  color: #f1e7da;
+  cursor: pointer;
+  justify-content: center;
+  &:hover {
+    color: #FFFFFF;
+    animation: animateBtn 0.15s forwards ease-in-out;
+  }
+}
+@keyframes animateBtn {
+  from {
+    background: linear-gradient(90deg, #3462a6, #07325d 20%, #1769cb);
+  }
+  50% {
+    background: linear-gradient(90deg, #125091, #2164a9 40%, #125091);
+
+  }
+  90% {
+    background: linear-gradient(90deg, #125091, #125091 80%, #316dc5);
+  }
+  to {
+    background: #125091;
+  }
+}

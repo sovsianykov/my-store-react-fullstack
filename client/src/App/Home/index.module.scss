@@ -1,0 +1,105 @@
+.wrapper {
+  overflow: hidden;
+  display: block;
+  height: 100vh;
+  position: relative;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .welcome {
+    font-family: Merienda, sans-serif;
+    font-size: 3em;
+    color: #fff;
+    display: block;
+    margin-right: 20px;
+  }
+  h1 {
+    font-family: "Alex Brush", sans-serif;
+    color: #fff;
+    font-size: 9em;
+    text-shadow: 5px 4px 7px rgba(#000, 0.4);
+    display: block;
+  }
+}
+.shade {
+  position: absolute;
+  z-index: -1;
+  // background: rgba(blue,.6);
+  background: linear-gradient(
+    180deg,
+    rgba(#04152a, 0.6),
+    rgba(#5386ce, 0.8) 62%,
+    rgba(#9accf5, 0.4) 99%
+  );
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card__bg__image {
+  height: calc(100% + 30px);
+  width: calc(100% + 30px);
+  -webkit-animation: card-shift 12s ease-in-out infinite;
+  animation: card-shift 12s ease-in-out infinite;
+  position: absolute;
+  z-index: -3;
+  // height: 600px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card__bg_image img {
+  object-fit: fill;
+}
+@import url("https://fonts.googleapis.com/css?family=Alex+Brush|Merienda");
+
+@-webkit-keyframes card-shift {
+  0% {
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
+  }
+}
+@keyframes card-shift {
+  0% {
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
+  }
+  25% {
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
+  }
+}

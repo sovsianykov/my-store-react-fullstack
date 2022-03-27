@@ -1,0 +1,74 @@
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  border-radius: 5px;
+  box-shadow: #b7bcc5;
+  color: #434548;
+  background: #FFFFFF;
+  padding: 10px;
+  .orderTitle {
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: .6rem;
+  }
+  .order {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    input {
+      border-radius: 3px;
+      font-weight: 300;
+      width: 300px;
+      margin: 10px 0;
+      height: 30px;
+      padding: 3px 20px;
+      font-size: 16px;
+      color: #555759;
+      border: none;
+      letter-spacing: 0.07rem;
+      background: #f1f1f1;
+      transition: .15s ease-in-out;
+      &:focus {
+        background: #f0f1f1;
+        border: 1px solid #125091;
+        color: #07325d;
+
+      }
+    }
+
+    .orderItem {
+      height: 30px;
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .5rem 0;
+      border-bottom: 1px dashed #b7bcc5;
+      .title {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      .price {
+        margin: 10px 0;
+        font-weight: 600;
+        letter-spacing: .03rem;
+        font-size: 20px;
+        color: #e10f0f;
+      }
+    }
+  }
+  .btnBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .totalAmount {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: .05rem;
+    color: #555759;
+  }
+}
